@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "hard_checks": {
+    "source_release_failed": 0,
+    "news_reaction_row_mismatch": 0,
+    "licensed_reaction_row_mismatch": 0,
+    "duplicate_news_reaction_events": 0,
+    "duplicate_licensed_reaction_events": 0,
+    "annotation_join_mismatch": 0,
+    "decision_join_mismatch": 0,
+    "missing_1m_outcome_status": 0,
+    "missing_5m_outcome_status": 0,
+    "missing_15m_outcome_status": 0,
+    "missing_60m_outcome_status": 0,
+    "missing_240m_outcome_status": 0,
+    "missing_1440m_outcome_status": 0
+  },
+  "source_release_quality_sha256": "8abcf0b44c27c9b544f540ec9d511c38696b8d2fc75dfdf4d676d5bb1fdc508f",
+  "coverage": {
+    "news_events": 120981,
+    "news_with_outcome_grid": 119841,
+    "licensed_text_events": 12433,
+    "licensed_text_with_outcome_grid": 12280,
+    "licensed_text_with_any_observed_reaction": 12260
+  }
+}

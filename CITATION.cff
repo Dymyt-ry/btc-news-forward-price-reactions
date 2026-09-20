@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the metadata below."
+title: "BTC News and Forward Price Reactions"
+type: dataset
+authors:
+  - family-names: Golobokov
+    given-names: Timofej
+version: 0.6.3
+date-released: 2026-09-20
+url: "https://github.com/Dymyt-ry/btc-news-forward-price-reactions"
+repository-code: "https://github.com/Dymyt-ry/btc-news-forward-price-reactions"
+keywords:
+  - bitcoin
+  - cryptocurrency
+  - news events
+  - event study
+  - multilingual NLP
+  - weak supervision
+  - time series
+

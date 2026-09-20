@@ -1,0 +1,1410 @@
+{
+  "licensed_news_price_reaction": [
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "source_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_author",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_author_kind",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_author_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "original_article_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "canonical_article_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_credit",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "title",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "summary",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "language_hint",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "attribution",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_basis",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_evidence_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_reviewed_at",
+      "type": "DATE"
+    },
+    {
+      "name": "publisher_article_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_is_in_depth",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "content_verification_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "current_api_text_exact_match",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "restriction_marker_detected",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "attribution_fetched_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "publisher_domain",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "article_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "feed_language_hint",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "title_language_heuristic_v1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_published_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "signal_ready_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "published_to_seen_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "processing_delay_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "publisher_time_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "publisher_time_future",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "publisher_time_old",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "title_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "observation_time_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "clock_drift_overlap",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "operational_incident_overlap",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "exact_title_group_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "licensed_text_available",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "text_redistribution_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_text_ml_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "annotation_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_event_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_label_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "event_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "event_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_btc_relevance",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_label_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_relevance_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_relevance_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_btc_direction_gated",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_direction_abstained",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "btc_direction_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_direction_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_direction_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "decision_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "decision_created_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "features_available_cutoff_ts",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "entry_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "entry_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "target_at_1m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_1m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_5m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_5m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_15m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_15m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_60m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_60m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_240m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_240m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_1440m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_1440m",
+      "type": "VARCHAR"
+    }
+  ],
+  "news_price_reaction": [
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_domain",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "article_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "feed_language_hint",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "title_language_heuristic_v1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_published_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "signal_ready_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "published_to_seen_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "processing_delay_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "publisher_time_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "publisher_time_future",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "publisher_time_old",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "title_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "observation_time_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "clock_drift_overlap",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "operational_incident_overlap",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "exact_title_group_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "licensed_text_available",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "text_redistribution_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_text_ml_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "annotation_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_event_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_label_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "event_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "event_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_btc_relevance",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_label_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_relevance_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_relevance_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_btc_direction_gated",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_direction_abstained",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "btc_direction_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_direction_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_direction_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "decision_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "decision_created_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "features_available_cutoff_ts",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "entry_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "entry_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "target_at_1m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_1m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_5m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_5m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_15m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_15m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_60m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_60m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_240m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_240m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "target_at_1440m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "target_price_usd_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_return_bps_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status_1440m",
+      "type": "VARCHAR"
+    }
+  ],
+  "news_index": [
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_domain",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "article_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "title_fingerprint_sha1_v1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "feed_language_hint",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "title_language_heuristic_v1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "collector_source_tier_hint",
+      "type": "INTEGER"
+    },
+    {
+      "name": "source_published_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "fetched_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "signal_ready_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "published_to_seen_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "processing_delay_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "publisher_time_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "publisher_time_future",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "publisher_time_old",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "title_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "observation_time_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "clock_drift_overlap",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "operational_incident_overlap",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "published_time_origin",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "published_time_corrected",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "migration_ids",
+      "type": "VARCHAR[]"
+    },
+    {
+      "name": "exact_title_group_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "bundle_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "text_redistribution_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_text_ml_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "licensed_text_available",
+      "type": "BOOLEAN"
+    }
+  ],
+  "weak_annotations": [
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "annotation_version",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "annotation_method",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "model_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "model_revision",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "model_config_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "model_weights_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "annotator_code_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rules_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "prototypes_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "annotation_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_event_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_model_top1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_label_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_rule_label",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_rule_applied",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "event_rule_changed_model_output",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "event_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "event_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "event_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_candidates",
+      "type": "STRUCT(\"label\" VARCHAR, similarity DOUBLE)[]"
+    },
+    {
+      "name": "event_type_is_fallback",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "weak_btc_relevance",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_model_top1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_label_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_relevance_direct_term_applied",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "btc_relevance_direct_term_changed_model_output",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "btc_relevance_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_relevance_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_relevance_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_btc_direction_model_top1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weak_btc_direction_gated",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "btc_direction_abstained",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "btc_direction_cosine",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_direction_margin",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "btc_direction_margin_band",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "input_empty",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "bundle_id",
+      "type": "VARCHAR"
+    }
+  ],
+  "trading_decisions": [
+    {
+      "name": "decision_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "title_hash",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "decision_created_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "signal_ready_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "features_available_cutoff_ts",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "rule_version",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "code_git_sha",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "config_hash",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "horizons_min_json",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "clock_drift_overlap",
+      "type": "BOOLEAN"
+    }
+  ],
+  "market_1m": [
+    {
+      "name": "source_dataset",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_file",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "market_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "symbol",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "normalized_pair",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "interval",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "open_time",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "close_time",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "open",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "high",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "low",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "close",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "base_volume",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "quote_volume",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "trade_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "taker_buy_base_volume",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "taker_buy_quote_volume",
+      "type": "DOUBLE"
+    }
+  ],
+  "funding_rates": [
+    {
+      "name": "source_dataset",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_file",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "symbol",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "calculated_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "funding_interval_hours",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "funding_rate",
+      "type": "DOUBLE"
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "decision_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "decision_created_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "entry_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "horizon_min",
+      "type": "INTEGER"
+    },
+    {
+      "name": "target_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "entry_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "target_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_log_return",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "forward_log_return_bps",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "outcome_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_dataset",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_symbol",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_interval",
+      "type": "VARCHAR"
+    }
+  ],
+  "market_gap_summary": [
+    {
+      "name": "source_dataset",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "symbol",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "normalized_pair",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "interval",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "first_bar_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "last_bar_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "observed_rows",
+      "type": "BIGINT"
+    },
+    {
+      "name": "expected_rows",
+      "type": "BIGINT"
+    },
+    {
+      "name": "missing_whole_minutes",
+      "type": "BIGINT"
+    },
+    {
+      "name": "gap_records",
+      "type": "BIGINT"
+    }
+  ],
+  "source_registry": [
+    {
+      "name": "source_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "feed_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "feed_domain",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "configured_language_hint",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "collector_source_tier_hint",
+      "type": "INTEGER"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "last_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "row_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "row_share",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "metadata_publication_scope",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "text_redistribution_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "machine_learning_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_basis",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_evidence_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_reviewed_at",
+      "type": "DATE"
+    },
+    {
+      "name": "publisher_text_included",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "review_note",
+      "type": "VARCHAR"
+    }
+  ],
+  "source_coverage": [
+    {
+      "name": "source_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "month",
+      "type": "DATE"
+    },
+    {
+      "name": "rows",
+      "type": "BIGINT"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "last_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "missing_urls",
+      "type": "BIGINT"
+    },
+    {
+      "name": "missing_publisher_times",
+      "type": "BIGINT"
+    },
+    {
+      "name": "future_publisher_times",
+      "type": "BIGINT"
+    },
+    {
+      "name": "old_publisher_times",
+      "type": "BIGINT"
+    },
+    {
+      "name": "missing_titles",
+      "type": "BIGINT"
+    },
+    {
+      "name": "clock_drift_overlaps",
+      "type": "BIGINT"
+    }
+  ],
+  "language_coverage": [
+    {
+      "name": "language",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rows",
+      "type": "BIGINT"
+    },
+    {
+      "name": "row_share",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "source_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "first_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "last_seen_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    }
+  ],
+  "source_health": [
+    {
+      "name": "day",
+      "type": "DATE"
+    },
+    {
+      "name": "source_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "logged_checks",
+      "type": "BIGINT"
+    },
+    {
+      "name": "failures",
+      "type": "BIGINT"
+    },
+    {
+      "name": "new_items_reported",
+      "type": "BIGINT"
+    },
+    {
+      "name": "request_latency_p50_ms",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "request_latency_p95_ms",
+      "type": "DOUBLE"
+    }
+  ],
+  "clock_drift_windows": [
+    {
+      "name": "started_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "ended_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "max_drift_ms",
+      "type": "DOUBLE"
+    }
+  ],
+  "build_provenance": [
+    {
+      "name": "release_version",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "bundle_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "snapshot_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "index_manifest_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "market_manifest_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "private_text_input_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "exporter_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "duckdb_version",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "panews_attribution_manifest_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "parent_release_manifest_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "packaging_exporter_sha256",
+      "type": "VARCHAR"
+    }
+  ],
+  "rights_matrix": [
+    {
+      "name": "asset_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "asset_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "included_scope",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "text_redistribution_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "machine_learning_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rights_basis",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "evidence_url",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "publisher_text_included",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "reviewed_at",
+      "type": "DATE"
+    },
+    {
+      "name": "review_note",
+      "type": "VARCHAR"
+    }
+  ]
+}
