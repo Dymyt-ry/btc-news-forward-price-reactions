@@ -59,6 +59,17 @@ sample = ds.select_columns([
 print(sample[0])
 ```
 
+To work directly from this GitHub checkout without any network call:
+
+```python
+import pandas as pd
+
+df = pd.read_parquet(
+    "data/licensed_news_price_reaction/unknown.parquet"
+)
+print(df[["title", "weak_event_type", "forward_return_bps_60m"]].head())
+```
+
 Or download the complete immutable snapshot from GitHub Releases:
 
 ```bash
@@ -67,24 +78,27 @@ gh release download v0.6.3 \
 shasum -a 256 -c btc-news-forward-price-reactions-v0.6.3.zip.sha256
 ```
 
-The same quickstart is available as [examples/quickstart.py](examples/quickstart.py).
+Runnable versions are available as
+[examples/quickstart.py](examples/quickstart.py) and
+[examples/quickstart_local.py](examples/quickstart_local.py).
 
 ## Choose the right table
 
 | Need | Configuration | Rows |
 | --- | --- | ---: |
-| Reusable text + annotations + wide BTC reactions | `licensed_news_price_reaction` | 12,433 |
-| All events + annotations + wide BTC reactions | `news_price_reaction` | 120,981 |
-| Normalized event metadata | `news_index` | 120,981 |
-| Full weak-label scores and lineage | `weak_annotations` | 120,981 |
-| One-minute BTC/ETH bars | `market_1m` | 282,240 |
-| Long-format event × horizon targets | `outcomes` | 719,046 |
-| Rights decisions and evidence | `rights_matrix` | 21 |
+| Reusable text + annotations + wide BTC reactions | [`licensed_news_price_reaction`](data/licensed_news_price_reaction/unknown.parquet) | 12,433 |
+| All events + annotations + wide BTC reactions | [`news_price_reaction`](data/news_price_reaction/unknown.parquet) | 120,981 |
+| Normalized event metadata | [`news_index`](data/news_index/unknown.parquet) | 120,981 |
+| Full weak-label scores and lineage | [`weak_annotations`](data/weak_annotations/unknown.parquet) | 120,981 |
+| One-minute BTC/ETH bars | [`market_1m`](data/market_1m/unknown.parquet) | 282,240 |
+| Long-format event × horizon targets | [`outcomes`](data/outcomes/unknown.parquet) | 719,046 |
+| Rights decisions and evidence | [`rights_matrix`](data/rights_matrix/unknown.parquet) | 21 |
 
-The release archive contains all 16 configurations in the original Hugging
-Face-compatible hierarchy. Each configuration is one Parquet file. Historical
-Coin Metrics Community tables from v0.6.2 are intentionally omitted from this
-compact edition. Coin Metrics is not Coinbase.
+The repository's [`data/`](data) directory and the versioned release archive
+both contain all 16 configurations in the same Hugging Face-compatible
+hierarchy. Each configuration is one Parquet file. Historical Coin Metrics
+Community tables from v0.6.2 are intentionally omitted from this compact
+edition. Coin Metrics is not Coinbase.
 
 ## What “weak annotation” means
 
@@ -113,22 +127,26 @@ by documented source-specific terms; other publishers remain metadata-only.
 There is deliberately no blanket GitHub license for the compiled dataset.
 
 Read [RIGHTS.md](docs/RIGHTS.md) before redistribution or model release.
-The full archive contains the machine-readable rights matrix, source registry,
-and build provenance. Every published artifact is listed in
+The repository and full archive both contain the machine-readable
+[rights matrix](data/rights_matrix/unknown.parquet),
+[source registry](data/source_registry/unknown.parquet), and
+[build provenance](data/build_provenance/unknown.parquet). Every published
+artifact is listed in
 [release-metadata/SHA256SUMS](release-metadata/SHA256SUMS).
 
 ## Repository map
 
 ```text
 assets/             Cover artwork
+data/               All 16 Parquet configurations
 docs/               Rights, sources, annotation, and data notes
-examples/           Runnable Python quickstart
+examples/           Hub and local-file Python quickstarts
 release-metadata/   Manifest, schema, quality report, and checksums
 CITATION.cff        GitHub-native citation metadata
 ```
 
-The large Parquet files live in the versioned GitHub Release rather than git
-history. For interactive browsing and streaming, use
+The same data is also bundled in the immutable `v0.6.3` GitHub Release. For
+interactive browsing and streaming, use
 [Hugging Face](https://huggingface.co/datasets/dymyt-ry/btc-news-forward-price-reactions);
 for notebook workflows, use
 [Kaggle](https://www.kaggle.com/datasets/dymy1ry/btc-multilingual-news-market-events).
@@ -146,4 +164,3 @@ for notebook workflows, use
 
 GitHub exposes the citation controls from [CITATION.cff](CITATION.cff). A BibTeX
 entry is also included in the release notes and on the Hugging Face dataset card.
-
