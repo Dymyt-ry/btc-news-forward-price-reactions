@@ -2,25 +2,104 @@
   "passed": true,
   "hard_checks": {
     "source_release_failed": 0,
-    "news_reaction_row_mismatch": 0,
-    "licensed_reaction_row_mismatch": 0,
-    "duplicate_news_reaction_events": 0,
-    "duplicate_licensed_reaction_events": 0,
-    "annotation_join_mismatch": 0,
-    "decision_join_mismatch": 0,
-    "missing_1m_outcome_status": 0,
-    "missing_5m_outcome_status": 0,
-    "missing_15m_outcome_status": 0,
-    "missing_60m_outcome_status": 0,
-    "missing_240m_outcome_status": 0,
-    "missing_1440m_outcome_status": 0
+    "backward_rows_without_forward": 0,
+    "forward_rows_without_backward": 0,
+    "duplicate_backward_rows": 0,
+    "anchor_after_decision": 0,
+    "anchor_not_before_entry": 0,
+    "invalid_observed_backward": 0,
+    "unknown_backward_status": 0,
+    "missing_in_coverage_backward": 0,
+    "licensed_news_price_reaction_row_mismatch": 0,
+    "licensed_news_price_reaction_duplicate_events": 0,
+    "licensed_news_price_reaction_missing_backward_1m": 0,
+    "licensed_news_price_reaction_missing_backward_5m": 0,
+    "licensed_news_price_reaction_missing_backward_15m": 0,
+    "licensed_news_price_reaction_missing_backward_60m": 0,
+    "licensed_news_price_reaction_missing_backward_240m": 0,
+    "licensed_news_price_reaction_missing_backward_1440m": 0,
+    "news_price_reaction_row_mismatch": 0,
+    "news_price_reaction_duplicate_events": 0,
+    "news_price_reaction_missing_backward_1m": 0,
+    "news_price_reaction_missing_backward_5m": 0,
+    "news_price_reaction_missing_backward_15m": 0,
+    "news_price_reaction_missing_backward_60m": 0,
+    "news_price_reaction_missing_backward_240m": 0,
+    "news_price_reaction_missing_backward_1440m": 0
   },
-  "source_release_quality_sha256": "8abcf0b44c27c9b544f540ec9d511c38696b8d2fc75dfdf4d676d5bb1fdc508f",
+  "source_release_quality_sha256": "5b6b11210193331872ce8d7e9370ada25560ce6b201a2c5944ba8ac7ce758ac5",
   "coverage": {
     "news_events": 120981,
     "news_with_outcome_grid": 119841,
     "licensed_text_events": 12433,
     "licensed_text_with_outcome_grid": 12280,
-    "licensed_text_with_any_observed_reaction": 12260
+    "licensed_text_with_any_observed_reaction": 12260,
+    "backward_status_by_horizon": [
+      {
+        "horizon_min": 1,
+        "backward_status": "after_market_coverage",
+        "rows": 141
+      },
+      {
+        "horizon_min": 1,
+        "backward_status": "observed",
+        "rows": 119700
+      },
+      {
+        "horizon_min": 5,
+        "backward_status": "after_market_coverage",
+        "rows": 141
+      },
+      {
+        "horizon_min": 5,
+        "backward_status": "observed",
+        "rows": 119700
+      },
+      {
+        "horizon_min": 15,
+        "backward_status": "after_market_coverage",
+        "rows": 141
+      },
+      {
+        "horizon_min": 15,
+        "backward_status": "observed",
+        "rows": 119700
+      },
+      {
+        "horizon_min": 60,
+        "backward_status": "after_market_coverage",
+        "rows": 141
+      },
+      {
+        "horizon_min": 60,
+        "backward_status": "observed",
+        "rows": 119700
+      },
+      {
+        "horizon_min": 240,
+        "backward_status": "after_market_coverage",
+        "rows": 141
+      },
+      {
+        "horizon_min": 240,
+        "backward_status": "observed",
+        "rows": 119700
+      },
+      {
+        "horizon_min": 1440,
+        "backward_status": "after_market_coverage",
+        "rows": 141
+      },
+      {
+        "horizon_min": 1440,
+        "backward_status": "before_market_coverage",
+        "rows": 35
+      },
+      {
+        "horizon_min": 1440,
+        "backward_status": "observed",
+        "rows": 119665
+      }
+    ]
   }
 }

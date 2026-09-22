@@ -25,7 +25,7 @@ warranty.
   [MIT-licensed public-data repository](https://github.com/binance/binance-public-data/blob/master/README.md?plain=1).
 - U.S. SEC text follows the [SEC reuse policy](https://www.sec.gov/about/privacy-information).
 - Federal Reserve text follows the [Board disclaimer and public-domain policy](https://www.federalreserve.gov/disclaimer.htm).
-- Coin Metrics Community data is not included in v0.6.3.
+- Coin Metrics Community data is not included in v0.6.4.
 
 Other publisher text remains withheld. The compiled dataset has mixed terms,
 and the documented PANews conditions make the text-bearing release

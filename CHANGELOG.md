@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.6.4 — 2026-09-22
+
+- Added leak-free backward BTC windows: `pre_event_outcomes` (719,046
+  event × horizon rows) and `backward_*` / `pre_event_anchor_*` columns in both
+  analysis tables. The anchor is the open of the decision minute; forward
+  values are unchanged.
+- Added executed research notebooks (`notebooks/`): a forward/backward timing
+  test and a news-flow volatility forecast test, both with negative results.
+- Documented placebo-normalized reading of forward/backward ratios and a
+  1,441-minute embargo for machine learning.
+
 ## v0.6.3 — 2026-09-20
 
 - Added analysis-first `licensed_news_price_reaction` and

@@ -343,6 +343,110 @@
     {
       "name": "outcome_status_1440m",
       "type": "VARCHAR"
+    },
+    {
+      "name": "pre_event_anchor_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "pre_event_anchor_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_start_at_1m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_1m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_5m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_5m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_15m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_15m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_60m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_60m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_240m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_240m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_1440m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_1440m",
+      "type": "VARCHAR"
     }
   ],
   "news_price_reaction": [
@@ -612,6 +716,110 @@
     },
     {
       "name": "outcome_status_1440m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "pre_event_anchor_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "pre_event_anchor_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_start_at_1m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_1m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_1m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_5m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_5m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_5m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_15m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_15m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_15m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_60m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_60m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_60m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_240m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_240m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_240m",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "backward_start_at_1440m",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "backward_start_price_usd_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_return_bps_1440m",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status_1440m",
       "type": "VARCHAR"
     }
   ],
@@ -1076,6 +1284,64 @@
     },
     {
       "name": "outcome_status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_dataset",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_symbol",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_interval",
+      "type": "VARCHAR"
+    }
+  ],
+  "pre_event_outcomes": [
+    {
+      "name": "decision_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "decision_created_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "anchor_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "horizon_min",
+      "type": "INTEGER"
+    },
+    {
+      "name": "window_start_at",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "start_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "anchor_price_usd",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_log_return",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_log_return_bps",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "backward_status",
       "type": "VARCHAR"
     },
     {
